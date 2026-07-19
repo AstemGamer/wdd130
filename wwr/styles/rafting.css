@@ -1,6 +1,6 @@
 :root {
     --primary-color: #003049;
-    --secondary-color: #088395;
+    --secondary-color: #f0f8ff;
     --accent1-color: #f0f8ff;
     --accent2-color: #F4A241;
 
@@ -119,7 +119,7 @@ h2 {
     padding: 16px;
     text-align: center;
     background-color: rgba(0, 48, 73, 0.8);
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 section p {
