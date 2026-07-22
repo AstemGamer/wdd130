@@ -5,7 +5,7 @@ body {
 
 .flex-container {
     border: 3px dashed darkcyan;
-    background-color: lightyellow;
+    background-color: black;
     display: flex;
     flex-wrap: wrap;
 }
@@ -16,7 +16,7 @@ body {
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 0.5rem;
     background-color: #bbb;
-    color: #333;
+    color: green;
 }
 
 .item1 {
