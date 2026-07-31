@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-      content="Learn about Rafting Company Warrior, our history, mission, and passion for providing safe and unforgettable white water rafting adventures.">
+      content="Contact Rafting Company Warrior for rafting reservations, questions, and suggestions.">
     <meta name="author" content="Aron Guerrero">
-    <title>About Us | Rafting Company Warrior</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us | Rafting Company Warrior</title>
+
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 
 <body>
@@ -24,112 +25,119 @@
         </nav>
     </header>
 
-    <body>
-        <main>
+    <main>
+
+        <section class="company-info">
             <h1>Rafting Company Warrior</h1>
-            <p>Adress: 20 de Noviembre 388, 94000 Jalcomulco, Ver.
-                Number:+52 5555667788
-                Email: rafingwarrior@byu.com
-            </p>
-            <form class="box">
+
+            <p>20 de Noviembre 388</p>
+            <p>94000 Jalcomulco, Veracruz</p>
+            <p>+52 5555667788</p>
+            <p>raftingwarrior@byu.com</p>
+        </section>
+
+        <section class="contact-container">
+
+            <div class="map">
+                <iframe
+                  src="https://maps.google.com/maps?q=jalcomulco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  loading="lazy">
+                </iframe>
+            </div>
+
+            <form>
+
                 <div class="contact-item">
-                    <label for="Name">Name</label>
-                    <input type="text" id="Name" name="Name" placeholder="User">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="User" required>
                 </div>
 
-                <form class="box">
-                    <div class="contact-item">
-                        <label for="Email">Email</label>
-                        <input type="text" id="Email" name="Email" placeholder="rafting@fun.com">
-                    </div>
+                <div class="contact-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="rafting@fun.com"
+                      required>
+                </div>
 
-                    <tbody>
-                        <tr>
-                            <th rowspan="3">Massage propouse</th>
-                            <form class="box">
-                                <div class="contact-item">
-                                    <label for="General Inquiry">General Inquiry</label>
-                                    <input type="checkbox" id="General Inquiry"
-                                      name="General Inquiry">
-                                </div>
-                                <form class="box">
-                                    <div class="contact-item">
-                                        <label for="Reservation Question">Reservation
-                                            Question</label>
-                                        <input type="checkbox" id="Reservation Question"
-                                          name="Reservation Question">
-                                    </div>
-                                    <form class="box">
-                                        <div class="contact-item">
-                                            <label for="Website Suggestion">Website
-                                                Suggestion</label>
-                                            <input type="checkbox" id="Website Suggestion"
-                                              name="Website Suggestion">
-                                        </div>
-                        </tr>
-                    </tbody>
+                <div class="purpose">
+                    <p>Message Purpose</p>
 
-                    <div class="contact-item">
-                        <label for="Message">.Message</label>
-                        <textarea id="Message" name="Message" placeholder="Type here"></textarea>
-                    </div>
+                    <label>
+                        <input type="radio" name="purpose" value="general" checked>
+                        General Inquiry
+                    </label>
 
-                    <form class="box">
-                        <div class="contact-item">
-                            <label for="Subscribe">Please Subscribe me to the monthly
-                                newsletter</label>
-                            <input type="checkbox" id="Subscribe" name="Subscribe">
-                        </div>
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
 
-                        <button type="submit">Get in Touch!</button>
-                    </form>
-        </main>
-    </body>
+                    <label>
+                        <input type="radio" name="purpose" value="website">
+                        Website Suggestion
+                    </label>
+                </div>
 
-    <section class="adventures">
-        <h2>We are Here to Server You</h2>
+                <div class="message-box">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"
+                      placeholder="Type here"></textarea>
+                </div>
 
-        <figure>
-            <img src="images/canyon-rush-img.jpg"
-              alt="Guests rafting through a narrow turquoise canyon">
-            <figcaption>Canyon Rush</figcaption>
-        </figure>
+                <div class="newsletter">
+                    <label>
+                        <input type="checkbox" name="subscribe">
+                        Please Subscribe me to the monthly newsletter
+                    </label>
+                </div>
 
-        <figure>
-            <img src="images/thunder-gorge-img.jpg"
-              alt="Group navigating white water rapids in a yellow raft">
-            <figcaption>Thunder Gorge</figcaption>
-        </figure>
+                <button type="submit">Get in Touch!</button>
 
-        <figure>
-            <img src="images/big-mallard-img.jpg"
-              alt="Rafting team paddling a red raft through strong rapids">
-            <figcaption>Big Mallard</figcaption>
-        </figure>
+            </form>
 
+        </section>
 
-    </section>
+        <section class="adventures">
+            <h2>We are Here to Serve You</h2>
+
+            <figure>
+                <img src="images/Aron.jpeg" alt="Aron Warrior">
+                <figcaption>Aron Warrior</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/Stephania.jpeg" alt="Stephania Warrior">
+                <figcaption>Stephania Warrior</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/Manuel.jpeg" alt="Manuel Warrior">
+                <figcaption>Manuel Warrior</figcaption>
+            </figure>
+
+        </section>
+
     </main>
 
     <footer>
+
+        <p>
+            © 2026 Rafting Company Warrior | All Rights Reserved | Aron Guerrero
+        </p>
+
         <nav class="socialmedia">
             <a href="https://www.facebook.com">
-                <img src="images/facebook.jpg" alt="Facebook icon">
+                <img src="images/facebook.jpg" alt="Facebook">
             </a>
 
             <a href="https://www.instagram.com">
-                <img src="images/insta.jpg" alt="Instagram icon">
+                <img src="images/insta.jpg" alt="Instagram">
             </a>
 
             <a href="https://www.tiktok.com">
-                <img src="images/tiktok.png" alt="TikTok icon">
+                <img src="images/tiktok.png" alt="TikTok">
             </a>
         </nav>
 
-        <p>
-            © 2026 Rafting Company Warrior | All Rights Reserved |
-            Aron Guerrero
-        </p>
     </footer>
 
 </body>

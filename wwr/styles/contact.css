@@ -1,0 +1,221 @@
+:root {
+    --primary-color: #003049;
+    --secondary-color: #f0f8ff;
+    --accent1-color: #f0f8ff;
+    --accent2-color: #F4A241;
+
+    --heading-font: "Trebuchet MS", Arial, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 16px;
+    background-color: var(--accent2-color);
+}
+
+header img {
+    width: 90px;
+    background-color: white;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    padding: 15px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+.company-info {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.company-info h1 {
+    margin-bottom: 10px;
+}
+
+.company-info p {
+    margin: 4px 0;
+    font-weight: bold;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 30px 0;
+    align-items: start;
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+.contact-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+}
+
+.contact-item label {
+    font-weight: bold;
+}
+
+.contact-item input {
+    padding: 8px;
+}
+
+.purpose {
+    display: grid;
+    gap: 10px;
+}
+
+.purpose p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.purpose label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.message-box {
+    display: grid;
+    gap: 8px;
+}
+
+.message-box label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.newsletter label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    padding: 12px;
+    border: 1px solid #888;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    background-color: rgba(0, 48, 73, 0.8);
+    color: white;
+    padding: 20px;
+}
+
+.adventures figure {
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.adventures figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+}
